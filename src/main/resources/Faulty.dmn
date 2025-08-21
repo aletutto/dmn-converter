@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" id="definitions_7542f4f0-b248-40a3-8240-bf6b5c43173a" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.34.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.6.0">
+  <decision id="sampleDecision" name="Sample Decision">
+    <decisionTable id="decisionTable_afa6f760-83b3-47b9-adc9-20d5a77b7523">
+      <input id="temperature" label="Temperature">
+        <inputExpression id="inputExpression_b65b262e-932a-4959-895d-b37818695822" typeRef="number">
+          <text>temperature</text>
+        </inputExpression>
+      </input>
+      <output id="output_d874e31f-6633-4f83-9e7e-0d9500e8a3af" label="Climate" name="climate" typeRef="string" />
+      <rule id="rule_bf7a66c7-15f4-4317-8d63-4036b3d413a3">
+        <inputEntry id="inputEntry_1949bab5-65d0-47cf-b0cb-6c879121828f">
+          <text>&lt; 15</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4c60371b-1171-4791-9b66-f95e15601780">
+          <text>"Warm"</text>
+        </outputEntry>
+      </rule>
+      <rulez id="rule_bf7a66c7-15f4-4317-8d63-4036b3d413a3">
+        <inputEntry id="inputEntry_1949bab5-65d0-47cf-b0cb-6c879121828f">
+          <text>&lt; 15</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_4c60371b-1171-4791-9b66-f95e15601780">
+          <text>"Warm"</text>
+        </outputEntry>
+      </rulez>
+    </decisionTable>
+  </decision>
+</definitions>

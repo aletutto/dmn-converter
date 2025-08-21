@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<definitions id="definitions_164acc8b-8ca3-45eb-9e98-972965d9ef2c" xmlns:modeler="http://camunda.org/schema/modeler/1.0" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.6.0" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/">
+  <decision id="sampleDecision" name="Sample Decision">
+    <decisionTable hitPolicy="UNIQUE" id="decisionTable_f6bbb3f3-fb1c-4e09-8a72-433b6b522cff">
+      <input id="temperature" label="Temperature">
+        <inputExpression id="inputExpression_adf15c20-496d-48b8-b602-26c367a5bd69" typeRef="number">
+          <text>temperature</text>
+        </inputExpression>
+      </input>
+      <output id="output_5edffce0-9b90-4b86-8f94-39c68da14693" label="Climate" name="climate" typeRef="string"/>
+      <rule id="rule_6ca7cbbf-078b-4f1a-b850-8516fa5ffc38">
+        <inputEntry id="inputEntry_899c0ce1-8278-44ea-9e59-d20dea464f45">
+          <text>&lt; 15 !</text>
+        </inputEntry>
+        <outputEntry id="outputEntry_b004dd73-ea24-4438-8ca0-c6e3ebbc452f">
+          <text>"Warm"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
